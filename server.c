@@ -61,7 +61,7 @@
 #include "compat.h"
 
 char process_string[100] = { 0 };
-struct conn_info* shm_conn_info = NULL;
+static struct conn_info* shm_conn_info = NULL;
 int shmid = 0;
 
 static volatile sig_atomic_t server_term;

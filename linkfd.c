@@ -280,7 +280,7 @@ int32_t magic_rtt_avg = 0;
  * Used by signal handlers that's why it is global.
  */
 struct vtun_host *lfd_host;
-struct conn_info *shm_conn_info;
+static struct conn_info *shm_conn_info;
 
 struct lfd_mod *lfd_mod_head = NULL, *lfd_mod_tail = NULL;
 struct channel_info *chan_info = NULL;
